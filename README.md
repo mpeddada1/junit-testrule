@@ -4,10 +4,16 @@ Sample application to demonstrate NPE with native-maven-plugin 0.9.12 and later.
 
 To run:
 
-1) `mvn clean install -DskipTests`
-2) `cd child-project`
-3) `mvn test -Pnative`
-4) See the following error:
+1) `java -version`
+```
+openjdk version "11.0.15" 2022-04-19
+OpenJDK Runtime Environment GraalVM CE 22.1.0 (build 11.0.15+10-jvmci-22.1-b06)
+OpenJDK 64-Bit Server VM GraalVM CE 22.1.0 (build 11.0.15+10-jvmci-22.1-b06, mixed mode, sharing)
+```
+2) `mvn clean install -DskipTests`
+3) `cd child-project`
+4) `mvn test -Pnative`
+5) See the following error:
 
 ```
 [INFO] -------------------------------------------------------
